@@ -6,3 +6,7 @@ jest.mock('../src/logo.svg', () => 'logo.svg');
 
 global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
+
+afterEach(() => {
+    jest.clearAllMocks();
+  }); 

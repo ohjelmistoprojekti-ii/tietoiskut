@@ -1,22 +1,26 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { MemoryRouter, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, useNavigate } from 'react-router-dom';
 import AppWrapper from '../src/App';
+import LocalStorageViewerPage from '../src/LocalStorageViewerPage';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useNavigate: jest.fn(),
 }));
 
-test('navigates to a specific route on button click', () => {
-  const navigate = jest.fn();
-  useNavigate.mockReturnValue(navigate);
+test('integration test for route on button click', () => {
+  const mockNavigate = jest.fn();
+  useNavigate.mockReturnValue(mockNavigate);
 
   render(
-      <AppWrapper />
+    <AppWrapper />
   );
 
   fireEvent.click(screen.getByText(/Login/i));
+
+  // Check if navigate was called with the expected route
+  expect(useNavigate).toHaveBeenCalledWith();
 });
 
 test('integration test for login form and local storage', () => {
@@ -32,10 +36,18 @@ test('integration test for login form and local storage', () => {
   fireEvent.click(screen.getByText(/Login/i));
 
   // Check if local storage is updated
-  //expect(localStorage.getItem('name')).toBe('John Doe');
-  //expect(localStorage.getItem('email')).toBe('john.doe@example.com');
+  expect(localStorage.getItem('name')).toBe('John Doe');
+  expect(localStorage.getItem('email')).toBe('john.doe@example.com');
+});
 
-  //expect(screen.getByText(/Local Storage Viewer/i)).toBeInTheDocument();
-  //expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
-  //expect(screen.getByText(/john.doe@example.com/i)).toBeInTheDocument();
+test('integration test for local storage viewer page', () => {
+  render(
+    <Router>
+      <LocalStorageViewerPage />
+    </Router>
+  );
+
+  // Check if the local storage viewer page contains the correct information
+  expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
+  expect(screen.getByText(/john.doe@example.com/i)).toBeInTheDocument();
 });
