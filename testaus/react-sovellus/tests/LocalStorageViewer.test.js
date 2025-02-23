@@ -5,14 +5,16 @@ import LocalStorageViewer from '../src/LocalStorageViewer';
 
 test('renders LocalStorageViewer component', () => {
   render(<LocalStorageViewer />);
-  const headingElement = screen.getByRole('heading', { name: /local storage viewer/i });
+  const headingElement = screen.getByRole('heading', { name: /Local Storage Content/i });
   expect(headingElement).toBeInTheDocument();
 });
 
 test('displays local storage items', () => {
   localStorage.setItem('testKey', 'testValue');
   render(<LocalStorageViewer />);
-  const itemElement = screen.getByText(/testKey: testValue/i);
+  const keyElement = screen.getByText(/testKey:/i);
+  expect(keyElement).toBeInTheDocument();
+  const itemElement = screen.getByText(/testValue/i);
   expect(itemElement).toBeInTheDocument();
   localStorage.removeItem('testKey');
 });
