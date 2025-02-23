@@ -4,12 +4,6 @@ import {BrowserRouter, MemoryRouter} from 'react-router-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import AppWrapper from '../src/App';
 
-// tests/App.test.js
-//jest.mock('react-router-dom', () => ({
-//  ...jest.requireActual('react-router-dom'),
-//  MemoryRouter: ({ children }) => <div>{children}</div>,
-//}));
-
 test('renders learn react link', () => {
   render(
       <AppWrapper />
