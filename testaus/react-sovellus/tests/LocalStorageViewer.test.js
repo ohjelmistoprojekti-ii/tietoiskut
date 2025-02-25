@@ -1,20 +1,25 @@
 import React from 'react';
 import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import LocalStorageViewer from '../src/LocalStorageViewer';
 
-test('renders LocalStorageViewer component', () => {
-  render(<LocalStorageViewer />);
+test('TC-001: renders LocalStorageViewer text', () => {
+  render(
+      <LocalStorageViewer />
+  );
   const headingElement = screen.getByRole('heading', { name: /Local Storage Content/i });
   expect(headingElement).toBeInTheDocument();
 });
 
-test('displays local storage items', () => {
-  localStorage.setItem('testKey', 'testValue');
-  render(<LocalStorageViewer />);
-  const keyElement = screen.getByText(/testKey:/i);
+test('TC-002: displays LocalStorage items', () => {
+  localStorage.setItem('John Doe', 'john.doe@example.com');
+  render(
+      <LocalStorageViewer />
+  );
+
+  const keyElement = screen.getByText(/John Doe/i);
   expect(keyElement).toBeInTheDocument();
-  const itemElement = screen.getByText(/testValue/i);
-  expect(itemElement).toBeInTheDocument();  
-  localStorage.removeItem('testKey');
+  const valueElement = screen.getByText(/john.doe@example.com/i);
+  expect(valueElement).toBeInTheDocument();
+  localStorage.removeItem('John Doe');
 });
