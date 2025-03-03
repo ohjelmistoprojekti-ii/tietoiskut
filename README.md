@@ -12,6 +12,6 @@
 ## Tietoisku I: Ohjelmiston testaaminen
 
 Sisällysluettelo:
-- [testaus](#testaus) sisältää yksinkertaisen React-sovelluksen, johon harjoituksena tehdään yksikkö- ja integrointitestit
+- [testaus](https://github.com/ohjelmistoprojekti-ii/tietoiskut/tree/main/testaus/react-sovellus) sisältää yksinkertaisen React-sovelluksen, johon harjoituksena tehdään yksikkö- ja integrointitestit
 
 

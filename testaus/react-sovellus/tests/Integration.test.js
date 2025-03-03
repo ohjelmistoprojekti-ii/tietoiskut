@@ -50,4 +50,5 @@ test('integration test for local storage viewer page', () => {
   // Check if the local storage viewer page contains the correct information
   expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
   expect(screen.getByText(/john.doe@example.com/i)).toBeInTheDocument();
+  localStorage.removeItem('John Doe');
 });
