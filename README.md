@@ -9,9 +9,14 @@
    cd testaus
    cd react-sovellus
 
-## Tietoisku I: Ohjelmiston testaaminen
+## Tietoisku I: Ohjelmiston protoilu
+
+
+
+## Tietoisku II: Ohjelmiston testaaminen
 
 Sisällysluettelo:
 - [testaus](https://github.com/ohjelmistoprojekti-ii/tietoiskut/tree/main/testaus/react-sovellus) sisältää yksinkertaisen React-sovelluksen, johon harjoituksena tehdään yksikkö- ja integrointitestit
 
+## Tietoisku III: Automaatiotestaaminen
 
