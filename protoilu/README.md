@@ -4,25 +4,25 @@ Prototyypit ovat keskeinen osa ohjelmistokehitystä, sillä ne auttavat konkreti
 
 ## Miksi käyttää prototyyppejä?
 
-**Yhteisymmärryksen luominen**: Prototyyppi toimii visuaalisena ja toiminnallisena mallina, jonka avulla tiimi ja asiakas voivat varmistaa, että asiakas ja kehittäjät ymmärtävät ohjelmiston tavoitteet ja toiminnot samanlailla.
+**Yhteisymmärryksen luominen**: Prototyyppi toimii visuaalisena ja toiminnallisena mallina, jolla asiakas ja kehittäjät ymmärtävät ohjelmiston tavoitteet ja toiminnot samanlailla.
 
 **Käytettävyyden testaus**: Prototyyppien avulla tunnistetaan käyttöliittymän epäjohdonmukaisuudet ja parannetaan käyttökokemusta ennen varsinaista kehitystyötä. 
 
-**Iteratiivinen kehitys**: Nopeasti muokattavat prototyypit mahdollistavat ideointien testaamisen ja kehittämisen ilman suuria kustannuksia tai ajankäyttöä.
+**Iteratiivinen kehitys**: Nopeasti muokattavat prototyypit mahdollistavat ideoiden testaamisen ja MVP-kehittämisen ilman suuria kustannuksia ja ajankäyttöä.
 
 ## Prototyyppien tarkkuus
 
 **Lo-Fi prototyypit**: Esimerkiksi paperille piirretyt luonnokset tai yksinkertaiset rautalankamallit, jotka keskittyvät sisällön ja rakenteen hahmottamiseen.
 
-**Hi-Fi prototyypit**: Digitaaliset, interaktiiviset mallit, jotka jäljittelevät lopullista tuotetta ja mahdollistavat käytettävyyden testaamisen realistisesti. 
+**Hi-Fi prototyypit**: Digitaaliset, interaktiiviset mallit, jotka jäljittelevät lopullista tuotetta ja mahdollistavat käytettävyyden testaamisen. 
 
 # 🤖 Google Stitch
 
-Google Stitch on tekoälypohjainen käyttöliittymien suunnittelutyökalu, joka mahdollistaa prototyyppien luomisen nopeasti tekstikuvauksen tai luonnoksen perusteella.
+Google Stitch on tekoälypohjainen käyttöliittymien suunnittelutyökalu, joka mahdollistaa prototyyppien luomisen nopeasti tekstikuvauksen tai piirrosluonnoksen perusteella.
 
 ## Ominaisuudet
 
-Soveltuu erityisesti tilanteisiin, joissa tarvitaan nopeaa ideointia ja prototyyppien luomista ilman syvällistä suunnittelutyötä.
+Soveltuu erityisesti tilanteisiin, joissa tarvitaan nopeaa ideointia ja prototyyppien luomista ilman pitkällistä suunnittelutyötä.
 
 **Generatiivinen suunnittelu**: Luo käyttöliittymiä pelkän tekstikuvauksen tai kuvan perusteella.
 
@@ -40,4 +40,4 @@ Figma on selainpohjainen suunnittelutyökalu, joka tukee reaaliaikaista yhteisty
 
 **Interaktiiviset prototyypit**: Luo korkealaatuisia, koodittomia prototyyppejä, jotka jäljittelevät lopullista käyttökokemusta.
 
-**Dev Mode**: Tarjoaa kehittäjille tarvittavat tiedot suunnitelmien toteuttamiseksi koodina.
+**Dev Mode**: Tarjoaa kehittäjille tarvittavat tyylitiedot suunnitelmien toteuttamiseksi koodina.
