@@ -29,6 +29,40 @@ Sovelluksesi on valmis käyttöönotettavaksi!
 
 Lisätietoja käyttöönotosta löydät [täältä](https://facebook.github.io/create-react-app/docs/deployment).
 
+---
+
+# Tehtävä 1: Yksikkötestien tekeminen
+
+Tee kolme yksikkötestiä `tests`-kansioon siten, että jokaiselle testattavalle tiedostolle (`LocalStorageViewer.js`, `LocalStorageViewerPage.js`) luodaan oma testitiedosto, jonka nimi vastaa testattavaa tiedostoa, mutta pääte on `.test.js`. Esimerkiksi:
+
+- `src/LocalStorageViewer.js` → `tests/LocalStorageViewer.test.js`
+- `src/LocalStorageViewerPage.js` → `tests/LocalStorageViewerPage.test.js`
+
+Testitiedostossa tuodaan testattava komponentti ja tarvittaessa React Routerin `MemoryRouter`-komponentti, jos komponentti käyttää reititystä. Testit kirjoitetaan [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) -kirjastolla.
+
+Testitapaukset ovat:
+1. `TC-001: renders LocalStorageViewer text`
+2. `TC-002: displays LocalStorage items`
+3. `TC-003: renders LocalStorageViewerPage text`
+
+### Esimerkki testitiedoston rakenteesta
+
+```javascript
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import LocalStorageViewer from '../src/LocalStorageViewer';
+
+test('TC-001: renders LocalStorageViewer text', () => {
+  render(<LocalStorageViewer />);
+  expect(screen.getByText(/Local Storage Content/i)).toBeInTheDocument();
+});
+```
+
+
+
+
+---
+
 ### `npm run eject`
 
 **Huom: tätä toimintoa ei voi peruuttaa. Kun suoritat `eject`, et voi palata takaisin!**
