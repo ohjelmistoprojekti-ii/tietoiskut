@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Alkuun pääseminen Create React App -sovelluksessa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tämä projekti on luotu [Create React App](https://github.com/facebook/create-react-app) -työkalulla.
 
-## Available Scripts
+## Käytettävissä olevat komennot
 
-In the project directory, you can run:
+Projektihakemistossa voit suorittaa seuraavat komennot:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Käynnistää sovelluksen kehitystilassa.\
+Avaa [http://localhost:3000](http://localhost:3000) nähdäksesi sovelluksen selaimessa.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Sivu päivittyy automaattisesti, kun teet muutoksia.\
+Voit myös nähdä mahdolliset lint-virheet konsolissa.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Käynnistää testrunnerin interaktiivisessa katselutilassa.\
+Lisätietoja testien suorittamisesta löydät [täältä](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Kokoaa sovelluksen tuotantokäyttöä varten `build`-kansioon.\
+Se niputtaa Reactin tuotantotilaan ja optimoi rakennuksen parhaan suorituskyvyn saavuttamiseksi.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Rakennus on minifioitu ja tiedostonimet sisältävät hashit.\
+Sovelluksesi on valmis käyttöönotettavaksi!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Lisätietoja käyttöönotosta löydät [täältä](https://facebook.github.io/create-react-app/docs/deployment).
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Huom: tätä toimintoa ei voi peruuttaa. Kun suoritat `eject`, et voi palata takaisin!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Jos et ole tyytyväinen rakennustyökalun ja konfiguraation valintoihin, voit suorittaa `eject`-komennon milloin tahansa. Tämä komento kopioi kaikki konfiguraatiotiedostot ja riippuvuudet (webpack, Babel, ESLint, jne.) suoraan projektiisi, jolloin sinulla on täysi hallinta niihin. Kaikki muut komennot paitsi `eject` toimivat edelleen, mutta ne osoittavat nyt kopioituihin skripteihin, joten voit muokata niitä vapaasti. Tässä vaiheessa olet omillasi.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Sinun ei tarvitse koskaan käyttää `eject`-komentoa. Valmiiksi määritetty ominaisuusjoukko sopii pieniin ja keskisuuriin käyttöönottoihin, eikä sinun tarvitse tuntea velvollisuutta käyttää tätä ominaisuutta. Ymmärrämme kuitenkin, että tämä työkalu ei olisi hyödyllinen, ellet voisi mukauttaa sitä tarpeen mukaan.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Lisätietoja
 
-## Learn More
+Lisätietoja löydät [Create React App -dokumentaatiosta](https://facebook.github.io/create-react-app/docs/getting-started).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Reactista voit lukea lisää [Reactin dokumentaatiosta](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Koodin pilkkominen
 
-### Code Splitting
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Paketin koon analysointi
 
-### Analyzing the Bundle Size
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Progressiivisen web-sovelluksen tekeminen
 
-### Making a Progressive Web App
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Edistynyt konfigurointi
 
-### Advanced Configuration
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Käyttöönotto
 
-### Deployment
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### `npm run build` epäonnistuu minifioinnissa
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tämä osio on siirretty tänne: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
